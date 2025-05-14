@@ -1,0 +1,55 @@
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  body{
+      background-color: grey;
+  }
+
+  .container{
+      width: 100%;
+      background-color: lime;
+  }
+}
+
+
+.flex-container {
+  display: flex; /* Activates flex box*/
+  flex-direction: row; /* Defines the main axis */
+  flex-wrap: wrap; /* Allows items to wrap onto multiple lines */
+  justify-content: center; /* Aligns items along the main axis */
+  align-items: center; /* Aligns items along the cross axis */
+  padding: 20px; /* Padding around the flex container */
+  height: 100vh; /* Full height of the viewport */
+  background-color: lightgreen;
+}
+
+.item {
+  background-color: lightcoral; /* Background color for each flex item */
+  padding: 20px; /* Padding inside each flex item */
+  margin: 10px; /* Margin around each flex item */
+  flex: 1; /* Flex grow, shrink, and basis - allows items to grow and shrink, with a base width of 200px */
+}
+
+/* Grid Layout */
+.grid-container {
+  display: grid;
+  grid-template-areas: 'header header header'
+                       'menu main right'
+                       'footer footer footer';
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.item1{grid-area: header; background-color: red;}
+.item2{grid-area: menu; background-color: blue;}
+.item3{grid-area: main; background-color: olive;}
+.item4{grid-area: right; background-color: purple;}
+.item5{grid-area: footer; background-color: orange;}

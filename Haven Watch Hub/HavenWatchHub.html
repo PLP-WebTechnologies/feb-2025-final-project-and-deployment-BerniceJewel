@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haven Watch Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', 'Times New Roman', Times, serif;
+        }
+        .hero {
+            background-color: class="hover:text-blue-200 no-underline text-white transition duration-300";
+            background-image: ;
+            background-size: cover;
+            background-position: left center;
+            line-height: 1.4;
+            margin: 10px;
+        }
+        
+        /* Media Queries for Responsiveness */
+
+        /* Mobile View (up to 767px) */
+        @media (max-width: 767px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul {
+                flex-direction: column;
+                width: 100%;
+                margin-top: 0.5em;
+            }
+
+            nav ul li {
+                margin-left: 0;
+                margin-bottom: 0.5em;
+                width: 100%;
+            }
+
+            nav a {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+
+            .services-grid, .tools-grid {
+                flex-direction: column;
+            }
+
+            .tool-item {
+                flex-basis: auto;
+            }
+
+            #contact form {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head >
+<body class="bg-gradient-to-br from-pink-200 to-pink 800 py-16 px-4 text-center rounded-md">
+    <header class="bg-gradient-to-r from-purple-500 to-pink-500 text-white py-4 flex justify-between items-center sticky top-0 z-10 rounded-md shadow-md">
+        <div class="logo text-xl font-bold ml-4">
+            <img src="Screenshot 2025-04-22 121501.png" alt="Haven Watch Hub Logo" class="h-20">
+        </div>
+        <nav class="mr-4">
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:text-purple-200 no-underline text-white transition duration-300">Home</a></li>
+                <li><a href="#shop" class="hover:text-purple-200 no-underline text-white transition duration-300">Shop</a></li>
+                <li><a href="#new-collection" class="hover:text-purple-200 no-underline text-white transition duration-300">New Collection</a></li>
+                <li><a href="#Watch Repair" class="hover:text-purple-200 no-underline text-white transition duration-300">Watch Repair</a></li>
+                <li><a href="#contact" class="hover:text-purple-200 no-underline text-white transition duration-300">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero text-white text-left py-40 px-8 rounded-md flex items-center" >
+        <div class="max-w-2xl">
+            <h1 class="text-4xl font-bold mb-2 text-purple-800">Exquisite</h1>
+            <h1 class="text-4xl font-bold mb-2 text-purple-800">Timepieces</h1>
+            <p class="text-lg mb-8 text-black">Watches Crafted with precision and passion..</p>
+            <button class="bg-yellow-500 text-blue-700 py-3 px-6 rounded-full hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-opacity-75 font-semibold transition duration-300">
+                Shop Now
+            </button>
+        </div>
+    </section>
+    <section id="shop" class="bg-gradient-to-br from-blue-100 to-purple3100 py-16 px-4 text-center rounded-md">
+        <h2 class="text-2xl font-bold mb-8 text-purple-700">Featured Collection of GENTS watches</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div class="product-item bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                <img src="WhatsApp Image 2025-04-21 at 13.35.27.jpeg" alt="Watch 1" class="w-full h-auto object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-blue-600">Poedagar Gents Watch</h3>
+                    <p class="text-gray-700">A classic timepiece for every occasion.</p>
+                    <p class="text-xl font-bold text-gray-900 mt-2">Ksh. 3,800</p>
+                    <button class="mt-4 bg-gradient-to-r from-green-400 to-blue-500 text-white py-2 px-4 rounded-full hover:from-green-500 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-green-300 focus:ring-opacity-75 font-semibold w-full transition duration-300">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            <div class="product-item bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                <img src="WhatsApp Image 2025-04-21 at 15.15.40.jpeg" alt="Watch 1" class="w-full h-auto object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-blue-600">NEW VA VOOM GENTS WATCH</h3>
+                    <p class="text-gray-700">A classic timepiece for every occasion.</p>
+                    <p class="text-xl font-bold text-gray-900 mt-2">Ksh. 3,400</p>
+                    <button class="mt-4 bg-gradient-to-r from-green-400 to-blue-500 text-white py-2 px-4 rounded-full hover:from-green-500 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-green-300 focus:ring-opacity-75 font-semibold w-full transition duration-300">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            <div class="product-item bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                <img src="WhatsApp Image 2025-04-15 at 15.56.25.jpeg" alt="Watch 1" class="w-full h-auto object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-blue-600">Elegant Curren Gold Watch</h3>
+                    <p class="text-gray-700">A classic timepiece for every occasion.</p>
+                    <p class="text-xl font-bold text-gray-900 mt-2">Ksh. 3,400</p>
+                    <button class="mt-4 bg-gradient-to-r from-green-400 to-blue-500 text-white py-2 px-4 rounded-full hover:from-green-500 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-green-300 focus:ring-opacity-75 font-semibold w-full transition duration-300">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            <div class="product-item bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                <img src="WhatsApp Image 2025-04-15 at 15.56.25.jpeg" alt="Watch 1" class="w-full h-auto object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-blue-600">Elegant Curren Gold Watch</h3>
+                    <p class="text-gray-700">A classic timepiece for every occasion.</p>
+                    <p class="text-xl font-bold text-gray-900 mt-2">Ksh. 3,400</p>
+                    <button class="mt-4 bg-gradient-to-r from-green-400 to-blue-500 text-white py-2 px-4 rounded-full hover:from-green-500 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-green-300 focus:ring-opacity-75 font-semibold w-full transition duration-300">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            <div class="product-item bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                <img src="WhatsApp Image 2025-04-21 at 08.24.10.jpeg" alt="Watch 2" class="w-full h-auto object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-blue-600">RoseGold Hannah Martin Watch</h3>
+                    <p class="text-gray-700">Sleek and stylish for a modern look.</p>
+                    <p class="text-xl font-bold text-gray-900 mt-2">Ksh.3600</p>
+                    <button class="mt-4 bg-gradient-to-r from-purple-400 to-pink-500 text-white py-2 px-4 rounded-full hover:from-purple-500 hover:to-pink-600 focus:outline-none focus:ring-2 focus:ring-purple-300 focus:ring-opacity-75 font-semibold w-full transition duration-300">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            <div class="product-item bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                <img src="WhatsApp Image 2025-04-12 at 11.46.39.jpeg" alt="Watch 3" class="w-full h-auto object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-blue-600">OLEVS RoseGold Watch</h3>
+                    <p class="text-gray-700">Durable and functional for an active lifestyle.</p>
+                    <p class="text-xl font-bold text-gray-900 mt-2">Ksh. 3,500</p>
+                    <button class="mt-4 bg-gradient-to-r from-red-400 to-orange-500 text-white py-2 px-4 rounded-full hover:from-red-500 hover:to-orange-600 focus:outline-none focus:ring-2 focus:ring-red-300 focus:ring-opacity-75 font-semibold w-full transition duration-300">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="shop" class="shop bg-gradient-to-br from-white-100 to-white-50 py-16 px-4 text-center rounded-md">
+        <h2 class="text-2xl font-bold mb-8 text-purple-700">Featured Collection of Ladies Wathces</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div class="product-item bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                <img src="WhatsApp Image 2025-04-15 at 08.36.22.jpeg" alt="Watch 1" class="w-full h-auto object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-blue-600">Elegant Curren Gold Watch</h3>
+                    <p class="text-gray-700">A classic timepiece for every occasion.</p>
+                    <p class="text-xl font-bold text-gray-900 mt-2">Ksh. 3,400</p>
+                    <button class="mt-4 bg-gradient-to-r from-green-400 to-blue-500 text-white py-2 px-4 rounded-full hover:from-green-500 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-green-300 focus:ring-opacity-75 font-semibold w-full transition duration-300">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            <div class="product-item bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                <img src="WhatsApp Image 2025-04-15 at 15.56.25.jpeg" alt="Watch 1" class="w-full h-auto object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-blue-600">Elegant Curren Gold Watch</h3>
+                    <p class="text-gray-700">A classic timepiece for every occasion.</p>
+                    <p class="text-xl font-bold text-gray-900 mt-2">Ksh. 3,400</p>
+                    <button class="mt-4 bg-gradient-to-r from-green-400 to-blue-500 text-white py-2 px-4 rounded-full hover:from-green-500 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-green-300 focus:ring-opacity-75 font-semibold w-full transition duration-300">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            <div class="product-item bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                <img src="WhatsApp Image 2025-04-15 at 15.56.25.jpeg" alt="Watch 1" class="w-full h-auto object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-blue-600">Elegant Curren Gold Watch</h3>
+                    <p class="text-gray-700">A classic timepiece for every occasion.</p>
+                    <p class="text-xl font-bold text-gray-900 mt-2">Ksh. 3,400</p>
+                    <button class="mt-4 bg-gradient-to-r from-green-400 to-blue-500 text-white py-2 px-4 rounded-full hover:from-green-500 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-green-300 focus:ring-opacity-75 font-semibold w-full transition duration-300">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            <div class="product-item bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                <img src="WhatsApp Image 2025-04-15 at 15.56.25.jpeg" alt="Watch 1" class="w-full h-auto object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-blue-600">Elegant Curren Gold Watch</h3>
+                    <p class="text-gray-700">A classic timepiece for every occasion.</p>
+                    <p class="text-xl font-bold text-gray-900 mt-2">Ksh. 3,400</p>
+                    <button class="mt-4 bg-gradient-to-r from-green-400 to-blue-500 text-white py-2 px-4 rounded-full hover:from-green-500 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-green-300 focus:ring-opacity-75 font-semibold w-full transition duration-300">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            <div class="product-item bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                <img src="WhatsApp Image 2025-04-16 at 13.24.08.jpeg" alt="Watch 2" class="w-full h-auto object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-blue-600">RoseGold Hannah Martin Watch</h3>
+                    <p class="text-gray-700">Sleek and stylish for a modern look.</p>
+                    <p class="text-xl font-bold text-gray-900 mt-2">Ksh.3600</p>
+                    <button class="mt-4 bg-gradient-to-r from-purple-400 to-pink-500 text-white py-2 px-4 rounded-full hover:from-purple-500 hover:to-pink-600 focus:outline-none focus:ring-2 focus:ring-purple-300 focus:ring-opacity-75 font-semibold w-full transition duration-300">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            <div class="product-item bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                <img src="WhatsApp Image 2025-04-12 at 11.46.39.jpeg" alt="Watch 3" class="w-full h-auto object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-blue-600">OLEVS RoseGold Watch</h3>
+                    <p class="text-gray-700">Durable and functional for an active lifestyle.</p>
+                    <p class="text-xl font-bold text-gray-900 mt-2">Ksh. 3,500</p>
+                    <button class="mt-4 bg-gradient-to-r from-red-400 to-orange-500 text-white py-2 px-4 rounded-full hover:from-red-500 hover:to-orange-600 focus:outline-none focus:ring-2 focus:ring-red-300 focus:ring-opacity-75 font-semibold w-full transition duration-300">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="new-collection" class="bg-gradient-to-br from-blue-100 to-purple-100 py-16 px-4 text-center rounded-md">
+        <h2 class="text-2xl font-bold mb-8 text-purple-700">New Collection</h2>
+        <div class="new-collection-item rounded-lg overflow-hidden mx-auto max-w-lg shadow-lg transition-transform duration-300 hover:scale-105">
+            <img src="WhatsApp Image 2025-04-11 at 14.50.17.jpeg" alt="New Collection Watch" class="w-full h-auto object-cover">
+            <div>
+                <img src="WhatsApp Image 2025-04-10 at 12.30.16.jpeg"alt="New Collection Watch" class="w-full h-auto object-cover">
+                <img src="WhatsApp Image 2025-04-11 at 11.15.51.jpeg" alt="New Collection Watch" class="w-full h-auto object-cover">
+            </div>
+            <div class="p-6 bg-white">
+                <h3 class="text-xl font-semibold text-blue-600 mb-2">Limited Edition Timepiece</h3>
+                <p class="text-gray-700 mb-4">We are dedicated to creating watches that are not just accessories, but pieces of art, reflecting the elegance and sophistication of the modern woman.</p>
+                <button class="bg-gradient-to-r from-pink-500 to-yellow-500 text-blue-700 py-3 px-6 rounded-full hover:from-pink-600 hover:to-yellow-600 focus:outline-none focus:ring-2 focus:ring-pink-400 focus:ring-opacity-75 font-semibold transition duration-300">
+                    Explore Now
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="Watch Repair" class="bg-gradient-to-br from-gray-100 to-gray-50 py-16 px-4 text-center rounded-md">
+        <h2 class="text-2xl font-bold mb-8 text-purple-700">Watch Repair Services</h2>
+        <div class="max-w-2xl mx-auto">
+            <p class="text-gray-700 mb-6">We offer professional watch repair services to keep your timepieces in perfect condition.</p>
+            <ol>
+        <li>WATCH GLASS REPLACEMENT</li>
+        <li>BATTERY REPLACEMENT</li>
+        <li>WATCH RESIZING</li>
+        <li>WATCH BAND/STRAP REPLACEMENT</li>
+        </ol>
+            <video autoplay="Recording 2025-04-17 032114.mp4" src="Recording 2025-04-17 032114.mp4"></video>
+            <button class="bg-gradient-to-r from-green-400 to-blue-500 text-white py-3 px-6 rounded-full hover:from-green-500 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-green-300 focus:ring-opacity-75 font-semibold transition duration-300">
+                Get a Quote
+            </button>
+        </div>
+    </section>
+
+    <section id="contact" class="contact bg-gradient-to-br from-gray-100 to-gray-50 py-16 px-4 text-center rounded-md">
+        <h2 class="text-2xl font-bold mb-8 text-purple-700">Contact Us</h2>
+        <div class="max-w-md mx-auto">
+            <p class="text-gray-700 mb-6">Get in touch with us for inquiries, orders, or assistance. Fill out the form below or reach us via phone or email.</p>
+            <form class="space-y-4">
+                <input type="text" placeholder="Your Name" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition duration-300">
+                <input type="email" placeholder="Your Email" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition duration-300">
+                <textarea placeholder="Your Message" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition duration-300"></textarea>
+                <button type="submit" class="bg-gradient-to-r from-blue-500 to-purple-500 text-white py-3 px-6 rounded-full hover:from-blue-600 hover:to-purple-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 font-semibold w-full transition duration-300">
+                    Send Message
+                </button>
+            </form>
+            <div class="mt-8 text-gray-700">
+                <p class="text-blue-600">Phone: +254723360244</p>
+                <p class="text-purple-600">Email: info@havenwatchhub.com</p>
+                <p class="text-green-600">Address: CBD-River Road Street,Nairobi,Kenya</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-6 text-center rounded-md">
+        <p>© 2025 Haven Watch Hub. All rights reserved.</p>
+        <div class="mt-4 flex justify-center space-x-4">
+            <a href="#" class="hover:text-purple-200 no-underline transition duration-300">Privacy Policy</a>
+            <a href="#" class="hover:text-purple-200 no-underline transition duration-300">Terms of Service</a>
+            <a href="#" class="hover:text-purple-200 no-underline transition duration-300">Contact Us</a>
+        </div>
+    </footer>
+
+    <script>
+        // Add JavaScript for interactive elements here if needed.
+        // For example, you can add smooth scrolling to the navigation links:
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

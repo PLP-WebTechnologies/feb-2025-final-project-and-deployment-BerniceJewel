@@ -1,0 +1,24 @@
+Flexbox - Flexible Box Layout
+
+display: flex; /* Activates flex box*/
+flex-directions:row, column, row-reverse, column-reverse; /* Defines the main axis */
+flex-wrap: nowrap, wrap, wrap-reverse; /* Defines whether items should wrap onto multiple lines */
+justify-content: flex-start, flex-end, center, space-between, space-around, space-evenly; /* Aligns items along the main axis */
+align-items: stretch, flex-start, flex-end, center, baseline; /* Aligns items along the cross axis */
+align-content: stretch, flex-start, flex-end, center, space-between, space-around; /* Aligns lines of items along the cross axis when there is extra space */
+flex-grow: number; /* Defines the ability for a flex item to grow relative to the rest of the flex items */ 
+
+GRID LAYOUT
+display: grid; /* Activates grid layout */
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Defines the columns of the grid */
+grid-template-rows: auto; /* Defines the rows of the grid */
+grid-gap: 10px; /* Defines the gap between grid items */
+row-gap: 10px; /* Defines the vertical gap between rows */
+column-gap: 10px; /* Defines the horizontal gap between columns */
+grid-template-areas: 
+  "header header header"
+  "menu content sidebar"
+  "footer footer footer"; /* Defines named areas for grid items */
+justify-items: start, end, center, stretch; /* Aligns grid items along the inline (row) axis */
+align-items: start, end, center, stretch; /* Aligns grid items along the block (column) axis */
+   
